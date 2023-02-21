@@ -13,7 +13,12 @@ Get started on your app today with Steer Protocol!
 
 ## Backtest your strategy using the following command: 
 
-`yarn backtest` or `yarn steer-toolset app backtest YOUR_FILE`
+`yarn backtest-local` or `yarn backtest YOUR_FILE`
+
+
+You can also upload/use a strategy from the strategy-library
+
+`yarn backtest ./strategy-library/donchain-single-bin.wasm`
 
 ## Guides
 - [Building Your First App](https://docs.steer.finance/steer-apps/writing-an-app)
