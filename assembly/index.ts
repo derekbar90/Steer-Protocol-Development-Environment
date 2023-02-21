@@ -14,6 +14,7 @@ let width: i32 = 600;
 let percent: f32 = 0;
 let poolFee: i32 = 0;
 
+@json
 class Config {
   width: number = 0;
   percent: number = 0;
@@ -21,9 +22,10 @@ class Config {
 }
 
 export function initialize(config: string): void {
+  console.log('config: ' + config)
   // Parse the config object
   const configJson = JSON.parse<Config>(config);
-
+  console.log(JSON.stringify(configJson));
   // Handle null case
   if (
     configJson.width == 0 ||
