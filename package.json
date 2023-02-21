@@ -14,8 +14,9 @@
     "semantic-release": "semantic-release",
     "commit": "cz",
     "postinstall": "yarn asbuild",
-    "backtest": "yarn steer-toolset app backtest ./build/debug.wasm -i",
-    "steer-toolset": "steer-toolset"
+    "backtest-local": "yarn steer-toolset app backtest ./build/debug.wasm -i",
+    "steer-toolset": "steer-toolset",
+    "backtest": "yarn steer-toolset app backtest -i"
   },
   "author": "Derek Barrera <derekbarrera@gmail.com>",
   "license": "ISC",
